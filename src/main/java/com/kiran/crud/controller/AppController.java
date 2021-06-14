@@ -29,6 +29,8 @@ public class AppController {
         return "login";
     }
 
+    @GetMapping("/users")
+    public String showUsersPage(){return "users"; }
 
 
 
@@ -54,6 +56,8 @@ Spring FrameworkのModelクラスもしくはModel And Viewクラスを利用し
    model.addAttribute("user", new User());
     return "register_form";
     }
+
+
 
 
     //Post_mapping after the user Input

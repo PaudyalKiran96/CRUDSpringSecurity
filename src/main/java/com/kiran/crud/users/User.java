@@ -2,7 +2,8 @@ package com.kiran.crud.users;
 import com.kiran.crud.controller.*;
 import javax.persistence.*;
 
-@Entity(name = "People_database")
+@Entity
+@Table(name = "People_database")
 public class User {
 
     @Id
